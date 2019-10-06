@@ -49,6 +49,7 @@ from sklearn.preprocessing import StandardScaler
 mlp = MLPClassifier(max_iter=500)
 standardScale = StandardScaler()
 
+# scaling data using Standard Scaler
 X_train2 = standardScale.fit_transform(X_train)
 X_test2 = standardScale.transform(X_test)
 
