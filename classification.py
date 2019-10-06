@@ -10,6 +10,8 @@ data  = load_breast_cancer()
 # print these commands to get an idea of the dataset
 # print(type(data))
 # print(data.DESCR)
+# print(data.data.shape)
+# print(data.target)
 
 from sklearn.model_selection import train_test_split
 
@@ -53,11 +55,13 @@ standardScale = StandardScaler()
 X_train2 = standardScale.fit_transform(X_train)
 X_test2 = standardScale.transform(X_test)
 
+# training data for NN 
 mlp.fit(X_train2,y_train)
 
 print("NN train scsore",mlp.score(X_train2,y_train))
 print("NN test scsore",mlp.score(X_test2,y_test))
 
+# NN predictions
 mlp_pred = mlp.predict(X_test2)
 
 print("NN prediction score",accuracy_score(y_test,mlp_pred))
