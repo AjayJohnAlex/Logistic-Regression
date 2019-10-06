@@ -1,0 +1,9 @@
+AdaBoost is best used to boost the performance of decision trees on binary classification problems.
+
+AdaBoost was originally called AdaBoost.M1 by the authors of the technique Freund and Schapire. 
+More recently it may be referred to as discrete AdaBoost because it is used for classification rather than regression.
+
+AdaBoost can be used to boost the performance of any machine learning algorithm. 
+
+It is best used with weak learners.
+These are models that achieve accuracy just above random chance on a classification problem.
